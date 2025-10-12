@@ -5,7 +5,7 @@
 #include <array>
 
 template <typename T, size_t N>
-class ArrDeque : public Deque<T>
+class ArrDeque : public IDeque<T>
 {
 public:
 	ArrDeque() noexcept;
