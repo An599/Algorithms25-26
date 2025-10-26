@@ -4,6 +4,16 @@
 #include <stdexcept>
 
 template <typename T>
+struct Node
+{
+    T val;
+    Node* next;
+
+    explicit Node(const T& value, Node* nextNode = nullptr)
+        : val(value), next(nextNode) {}
+};
+
+template <typename T>
 bool ListQueue<T>::empty() const
 {
 	return m_front == nullptr;
