@@ -4,6 +4,9 @@
 #include "IQueue.h"
 
 template <typename T>
+struct Node;
+
+template <typename T>
 class ListQueue : public IQueue <T>
 {
 public:
