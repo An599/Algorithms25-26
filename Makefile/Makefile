@@ -200,12 +200,3 @@ info:
 	@echo "  LDLIBS       : $(LDLIBS)"
 	@echo "  PREFIX       : $(PREFIX)"
 	@echo "────────────────────────────────────────────────"
-
-help:
-	@echo ""
-	@echo "  $(PROJECT) $(VERSION) — Build targets"
-	@echo ""
-	@grep -E '^## ' $(MAKEFILE_LIST) \
-	    | sed 's/^## //' \
-	    | awk -F' — ' '{ printf "  \033[1;32mmake %-16s\033[0m %s\n", $$1, $$2 }'
-	@echo ""
